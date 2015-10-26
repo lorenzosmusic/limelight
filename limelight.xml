@@ -80,7 +80,7 @@
     <div class='row'>
       <div class='large-12 columns'>
         <div class='button-group'>
-            <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
+          <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
         </div>
         <b:section class='tabs' id='crosscol-overflow' showaddelement='no'/>
       </div>
