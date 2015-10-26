@@ -70,5 +70,12 @@
     </div>
     <!-- /end Blogger Footer -->
 
+    <!-- js -->
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'/>
+    <script src='http://cdn.foundation5.zurb.com/foundation.js'/>
+    <script type='text/javascript'>
+      $(document).foundation();
+    </script>
+
   </body>
 </html>
