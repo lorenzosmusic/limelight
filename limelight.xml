@@ -84,7 +84,7 @@
       <div class='large-12 columns'>
         <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
         <b:section class='tabs' id='crosscol-overflow' showaddelement='no'>
-          <b:widget id='HTML3' locked='false' title='Featured' type='HTML'>
+          <b:widget id='HTML3' locked='false' title='Featured' type='HTML'/>
         </b:section>
       </div>
     </div>
