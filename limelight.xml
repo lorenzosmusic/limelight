@@ -2,6 +2,9 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
     <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+  	<link charset='utf-8' href='http://cdn.foundation5.zurb.com/foundation.css' media='screen' rel='stylesheet' title='no title'/>
     <b:if cond='data:blog.isMobile'>
     <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
     <b:else/>
@@ -29,13 +32,13 @@
       <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
     </b:section>
     <!-- /end Blogger main section -->
-    
+
     <!-- Blogger sidebar section -->
     <b:section class='sidebar' id='sidebar' preferred='yes'>
       <!-- Sidebar gadgets and widgets code -->
       <b:widget id='Label1' locked='false' title='Labels' type='Label'/>
     </b:section>
     <!-- /end Blogger sidebar section -->
-    
+
   </body>
 </html>
