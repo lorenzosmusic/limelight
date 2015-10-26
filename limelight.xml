@@ -5,11 +5,6 @@
     <!-- If you delete this meta tag World War Z will become a reality -->
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
   	<link charset='utf-8' href='http://cdn.foundation5.zurb.com/foundation.css' media='screen' rel='stylesheet' title='no title'/>
-    <b:if cond='data:blog.isMobile'>
-    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
-    <b:else/>
-      <meta content='width=1100' name='viewport'/>
-    </b:if>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
     <b:skin>
