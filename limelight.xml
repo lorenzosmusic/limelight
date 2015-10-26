@@ -62,7 +62,13 @@
 
     </div><!-- /end main row -->
 
-    
+    <!-- Blogger Footer section -->
+	  <div class='row'>
+      <div class='large-12 columns'>
+		    <b:section class='foot' id='footer' showaddelement='yes'/>
+      </div>
+    </div>
+    <!-- /end Blogger Footer -->
 
   </body>
 </html>
