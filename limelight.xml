@@ -84,7 +84,22 @@
       <div class='large-12 columns'>
         <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
         <b:section class='tabs' id='crosscol-overflow' showaddelement='no'>
-          <b:widget id='HTML3' locked='false' title='Featured' type='HTML'/>
+          <b:widget id='HTML3' locked='false' title='Featured' type='HTML'>
+            <b:includable id='main'>
+              <!-- only show on homepage -->
+              <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h2 class='title'><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                  <data:content/>
+                </div>
+
+                <b:include name='quickedit'/>
+              </b:if><!-- /end only show on homepage -->
+            </b:includable>
+          </b:widget>
         </b:section>
       </div>
     </div>
