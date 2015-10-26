@@ -17,6 +17,53 @@
        $(body.background.override) margin: 0;
        padding: 0;
       }*/
+      /* Custom styles
+       * -------------
+       */
+      /* Labels
+       * Removes zurb default lable styles from label widget
+       */
+      .widget.Label {
+        text-align: left;
+        color: #222;
+        background: transparent;
+      }
+      /* Navigation */
+      #header ul {
+          list-style: none;
+          margin: 0;
+          left: 0;
+      }
+      #header ul:after {
+          content: " ";
+          display: table;
+      }
+      #header ul li {
+          margin: 0 -2px;
+          display: inline-block;
+      }
+      #header li a {
+          padding: .6em 1em;
+      }
+      /* hide wiget title */
+      #header h2 {
+          display: none;
+      }
+
+      /* Featured element */
+      #crosscol-overflow h2 {
+          margin-bottom: 8px;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          font-size: 11px;
+          letter-spacing: .1em;
+          text-transform: uppercase;
+          border-bottom: 1px solid #ccc;
+      }
+      #crosscol-overflow h3 {
+          font-size: 36px;
+          font-weight: bold;
+      }
      ]]>
     </b:skin>
   </head>
