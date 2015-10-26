@@ -4,7 +4,7 @@
     <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
     <!-- If you delete this meta tag World War Z will become a reality -->
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-  	<link charset='utf-8' href='http://cdn.foundation5.zurb.com/foundation.css' media='screen' rel='stylesheet' title='no title'/>
+    <link charset='utf-8' href='http://cdn.foundation5.zurb.com/foundation.css' media='screen' rel='stylesheet' title='no title'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
     <b:skin>
@@ -70,24 +70,24 @@
   <body>
 
     <!-- Blogger Header section -->
-  	<div class='row'>
-        <div class='large-12 columns'>
-          <b:section class='header' id='header' maxwidgets='2' showaddelement='no'/>
-        </div>
+    <div class='row'>
+      <div class='large-12 columns'>
+        <b:section class='header' id='header' maxwidgets='2' showaddelement='no'/>
+      </div>
     </div>
 
     <!-- Blogger Crosscol section -->
-  	<div class='row'>
-        <div class='large-12 columns'>
-          <div class='button-group'>
-  		        <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
-          </div>
-          <b:section class='tabs' id='crosscol-overflow' showaddelement='no'/>
+    <div class='row'>
+      <div class='large-12 columns'>
+        <div class='button-group'>
+            <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
         </div>
+        <b:section class='tabs' id='crosscol-overflow' showaddelement='no'/>
+      </div>
     </div>
 
     <!-- main row -->
-	  <div class='row'>
+    <div class='row'>
 
       <!-- Blogger main section -->
       <div class='large-9 columns' role='content'>
@@ -110,9 +110,9 @@
     </div><!-- /end main row -->
 
     <!-- Blogger Footer section -->
-	  <div class='row'>
+    <div class='row'>
       <div class='large-12 columns'>
-		    <b:section class='foot' id='footer' showaddelement='yes'/>
+        <b:section class='foot' id='footer' showaddelement='yes'/>
       </div>
     </div>
     <!-- /end Blogger Footer -->
