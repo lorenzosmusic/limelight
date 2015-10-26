@@ -136,26 +136,28 @@
       <div class='large-9 columns' role='content'>
 
         <!-- Tagged content widget -->
-        <div class='section-home'>
-          <b:section class='recent' id='recent1' maxwidgets='1' showaddelement='yes'>
-            <b:widget id='HTML103' locked='true' title='Arcade Games' type='HTML'>
-              <b:includable id='main'>
-            <div class='widget-content'>
+        <b:if cond='data:blog.url == data:blog.homepageUrl'><!-- if homepage -->
+          <div class='section-home'>
+            <b:section class='recent' id='recent1' maxwidgets='1' showaddelement='yes'>
+              <b:widget id='HTML103' locked='true' title='Arcade Games' type='HTML'>
+                <b:includable id='main'>
+              <div class='widget-content'>
 
-          <div class='title-wrap'> <div class='title'>
-          <h3 class='title-text'><data:title/></h3>
-          </div>
-          </div>
-
-          <script type='text/javascript'>var numposts = 4;var showpostthumbnails = true;var showcommentnum = true;var showpostdate = true;var showpostsummary = false;var numchars = 100;</script>
-          <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:content + &quot;?published&amp;alt=json-in-script&amp;callback=labelthumbs&quot;' type='text/javascript'/>
-
+            <div class='title-wrap'> <div class='title'>
+            <h3 class='title-text'><data:title/></h3>
+            </div>
             </div>
 
-          </b:includable>
-            </b:widget>
-          </b:section>
-        </div>
+            <script type='text/javascript'>var numposts = 4;var showpostthumbnails = true;var showcommentnum = true;var showpostdate = true;var showpostsummary = false;var numchars = 100;</script>
+            <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:content + &quot;?published&amp;alt=json-in-script&amp;callback=labelthumbs&quot;' type='text/javascript'/>
+
+              </div>
+
+            </b:includable>
+              </b:widget>
+            </b:section>
+          </div>
+        </b:if><!-- /end if homepage -->
         <!-- /end Tagged content widget -->
 
         <b:section class='main' id='main' showaddelement='yes'>
