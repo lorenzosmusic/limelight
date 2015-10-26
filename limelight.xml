@@ -21,6 +21,14 @@
     </b:skin>
   </head>
   <body>
+
+    <!-- Blogger Header section -->
+  	<div class='row'>
+        <div class='large-12 columns'>
+          <b:section class='header' id='header' maxwidgets='2' showaddelement='no'/>
+        </div>
+    </div>
+
     <!-- Blogger main section -->
     <b:section class='main' id='main' showaddelement='yes'>
       <!-- blogger posts -->
