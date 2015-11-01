@@ -170,9 +170,9 @@
 
         <!-- feed thumbnail/post homepage widget -->
         <b:if cond='data:blog.url == data:blog.homepageUrl'><!-- if homepage -->
-          <div class='section-home row'>
+          <div class='section-home'>
             <b:section class='recent' id='recent1' maxwidgets='1' showaddelement='yes'>
-              <b:widget id='HTML103' class='large-12 columns' locked='true' title='Arcade Games' type='HTML'>
+              <b:widget id='HTML103' locked='true' title='Feed widget title' type='HTML'>
                 <b:includable id='main'>
                   <div class='widget-content'>
 
