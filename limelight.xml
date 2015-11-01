@@ -54,6 +54,12 @@
           background: url(https://lh3.googleusercontent.com/-BM_iWOmV5V4/AAAAAAAAAAI/AAAAAAAAAVI/w5rfSEMC-D4/s40-c/photo.jpg) left center no-repeat;
           padding-left: 50px;
       }
+      /* Center header image and text */
+      #Header1,
+      #Header1 img {
+          text-align: center;
+          margin: auto;
+      }
       /* hide wiget title */
       #header h2 {
           display: none;
