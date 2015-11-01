@@ -67,7 +67,7 @@
      ]]>
     </b:skin>
 
-    <!-- feed thumbnail/post js -->
+    <!-- feed thumbnail/post js - set up from post on helpblogger http://goo.gl/e2YsJX -->
     <script type='text/javascript'>
       //<![CDATA[
       function labelthumbs(json){document.write('<ul id="label_with_thumbs">');for(var i=0;i<numposts;i++){var entry=json.feed.entry[i];var posttitle=entry.title.$t;var posturl;if(i==json.feed.entry.length)break;for(var k=0;k<entry.link.length;k++){if(entry.link[k].rel=='replies'&&entry.link[k].type=='text/html'){var commenttext=entry.link[k].title;var commenturl=entry.link[k].href;}
@@ -135,25 +135,25 @@
       <!-- Blogger main section -->
       <div class='large-9 columns' role='content'>
 
-        <!-- Tagged content widget -->
+        <!-- feed thumbnail/post homepage widget -->
         <b:if cond='data:blog.url == data:blog.homepageUrl'><!-- if homepage -->
           <div class='section-home'>
             <b:section class='recent' id='recent1' maxwidgets='1' showaddelement='yes'>
               <b:widget id='HTML103' locked='true' title='Arcade Games' type='HTML'>
                 <b:includable id='main'>
-              <div class='widget-content'>
+                  <div class='widget-content'>
 
-            <div class='title-wrap'> <div class='title'>
-            <h3 class='title-text'><data:title/></h3>
-            </div>
-            </div>
+                    <div class='title-wrap'> <div class='title'>
+                    <h3 class='title-text'><data:title/></h3>
+                    </div>
+                    </div>
 
-            <script type='text/javascript'>var numposts = 3;var showpostthumbnails = true;var displaymore = false;var displayseparator = true;var showcommentnum = false;var showpostdate = false;var showpostsummary = true;var numchars = 100;</script> 
-            <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:content + &quot;?published&amp;alt=json-in-script&amp;callback=labelthumbs&quot;' type='text/javascript'/>
+                    <script type='text/javascript'>var numposts = 3;var showpostthumbnails = true;var displaymore = false;var displayseparator = true;var showcommentnum = false;var showpostdate = false;var showpostsummary = true;var numchars = 100;</script>
+                    <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:content + &quot;?published&amp;alt=json-in-script&amp;callback=labelthumbs&quot;' type='text/javascript'/>
 
-              </div>
+                  </div>
 
-            </b:includable>
+                </b:includable>
               </b:widget>
             </b:section>
           </div>
@@ -193,17 +193,17 @@
       $(document).foundation();
     </script>
 
-    <!-- thumbnail size adjustment -->
+    <!-- feed thumbnail/post thumbnail size adjustment -->
     <script type='text/javascript'>
       function changeThumbSize(id,size){
-      var blogGadget = document.getElementById(id);
-      var replacement = blogGadget.innerHTML;
-      blogGadget.innerHTML = replacement.replace(/s72-c/g,"s"+size+"-c");
-      var thumbnails = blogGadget.getElementsByTagName("img");
-      for(var i=0;i&lt;thumbnails.length;i++){
-      thumbnails[i].width = size;
-      thumbnails[i].height = size;
-      }
+        var blogGadget = document.getElementById(id);
+        var replacement = blogGadget.innerHTML;
+        blogGadget.innerHTML = replacement.replace(/s72-c/g,"s"+size+"-c");
+        var thumbnails = blogGadget.getElementsByTagName("img");
+        for(var i=0;i&lt;thumbnails.length;i++){
+          thumbnails[i].width = size;
+          thumbnails[i].height = size;
+        }
       }
       changeThumbSize("label_with_thumbs",210);
     </script>
