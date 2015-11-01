@@ -37,6 +37,8 @@
           list-style: none;
           margin: 0;
           left: 0;
+          overflow: hidden;
+          padding: 0;
       }
       #header ul:after {
           content: " ";
@@ -45,9 +47,14 @@
       #header ul li {
           margin: 0 -2px;
           display: inline-block;
+          float: left;
+          list-style: none;
       }
       #header li a {
           padding: .6em 1em;
+      }
+      #header ul > li > * {
+          display: block;
       }
       /* Add logo to homelink in navbar */
       #PageList1 li:first-child a {
