@@ -100,7 +100,9 @@
      ]]>
     </b:skin>
 
-    <!-- feed thumbnail/post js - set up from post on helpblogger http://goo.gl/e2YsJX -->
+    <!-- feed thumbnail/post js -
+         Based on post on helpblogger - http://goo.gl/e2YsJX
+         And examples from Templateism - http://goo.gl/0tD8a3 -->
     <script type='text/javascript'>
       //<![CDATA[
       function labelthumbs(json){document.write('<ul id="label_with_thumbs">');for(var i=0;i<numposts;i++){var entry=json.feed.entry[i];var posttitle=entry.title.$t;var posturl;if(i==json.feed.entry.length)break;for(var k=0;k<entry.link.length;k++){if(entry.link[k].rel=='replies'&&entry.link[k].type=='text/html'){var commenttext=entry.link[k].title;var commenturl=entry.link[k].href;}
