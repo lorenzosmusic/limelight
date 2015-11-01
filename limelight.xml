@@ -7,6 +7,10 @@
     <link charset='utf-8' href='http://cdn.foundation5.zurb.com/foundation.css' media='screen' rel='stylesheet' title='no title'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
+
+    <!-- Cashmusic js -->
+    <script type="text/javascript" src="https://cashmusic.org/public/cashmusic.js"></script>
+
     <b:skin>
      <![CDATA[
       /*body {
