@@ -49,6 +49,11 @@
       #header li a {
           padding: .6em 1em;
       }
+      /* Add logo to homelink in navbar */
+      #PageList1 li:first-child a {
+          background: url(https://lh3.googleusercontent.com/-BM_iWOmV5V4/AAAAAAAAAAI/AAAAAAAAAVI/w5rfSEMC-D4/s40-c/photo.jpg) left center no-repeat;
+          padding-left: 50px;
+      }
       /* hide wiget title */
       #header h2 {
           display: none;
