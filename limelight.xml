@@ -117,7 +117,10 @@
           text-transform: uppercase;
           border-bottom: 1px solid #ccc;
       }
-      #crosscol-overflow h3 {
+      .featured-box {
+          padding-top: 20px;
+      }
+      .featured-box h3 {
           font-size: 36px;
           font-weight: bold;
       }
