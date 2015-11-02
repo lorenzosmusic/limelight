@@ -89,8 +89,9 @@
       }
       /* Add logo to homelink in navbar */
       #PageList1 li:first-child a {
-          background: url(https://lh3.googleusercontent.com/-BM_iWOmV5V4/AAAAAAAAAAI/AAAAAAAAAVI/w5rfSEMC-D4/s40-c/photo.jpg) left center no-repeat;
-          padding-left: 50px;
+          width: 70px;
+          text-indent: -9999px;
+          background: url(https://lh3.googleusercontent.com/-BM_iWOmV5V4/AAAAAAAAAAI/AAAAAAAAAVI/w5rfSEMC-D4/s40-c/photo.jpg) center center no-repeat;
       }
       /* Center header image and text */
       #Header1,
