@@ -158,6 +158,13 @@
         text-decoration:none;
         transition: all 500ms ease;
       }
+      /* Posts
+       * ----- */
+      /* post images
+       * weird Zurb/firefox bug fix for post images in caption table */
+      td img {
+        width: 100%;
+      }
      ]]>
     </b:skin>
 
